@@ -1,0 +1,121 @@
+.productDetails {
+  padding: 40px 0;
+  min-height: 100vh;
+}
+
+.productGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.imageSection img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.infoSection h1 {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.price {
+  margin-bottom: 15px;
+}
+
+.currentPrice {
+  font-size: 24px;
+  font-weight: 600;
+  color: #333;
+}
+
+.originalPrice {
+  font-size: 20px;
+  color: #999;
+  text-decoration: line-through;
+  margin-left: 10px;
+}
+
+.rating {
+  margin-bottom: 20px;
+  color: #666;
+}
+
+.description {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.options {
+  margin-bottom: 30px;
+}
+
+.sizes,
+.colors {
+  margin-bottom: 20px;
+}
+
+.sizes h3,
+.colors h3 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.sizeGrid,
+.colorGrid {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.sizeButton,
+.colorButton {
+  padding: 10px 15px;
+  border: 2px solid #ddd;
+  background: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+.sizeButton:hover,
+.colorButton:hover {
+  border-color: #333;
+}
+
+.actions {
+  display: flex;
+  gap: 20px;
+}
+
+.actions .btn {
+  flex: 1;
+  padding: 15px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.notFound {
+  text-align: center;
+  padding: 100px 0;
+}
+
+@media (max-width: 768px) {
+  .productGrid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .actions {
+    flex-direction: column;
+  }
+}

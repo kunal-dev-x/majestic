@@ -1,0 +1,27 @@
+.wishlist {
+  padding: 40px 0;
+  min-height: 100vh;
+}
+
+.wishlist h1 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 32px;
+  color: #333;
+}
+
+.emptyWishlist {
+  text-align: center;
+  padding: 100px 0;
+}
+
+.emptyWishlist h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.emptyWishlist p {
+  font-size: 18px;
+  color: #666;
+}

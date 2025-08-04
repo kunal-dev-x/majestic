@@ -1,0 +1,122 @@
+.outfits {
+  padding: 80px 0;
+  background: white;
+}
+
+.title {
+  font-size: 36px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.subtitle {
+  font-size: 18px;
+  text-align: center;
+  color: #666;
+  margin-bottom: 50px;
+}
+
+.outfitsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 30px;
+}
+
+.outfitCard {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  aspect-ratio: 4/5;
+}
+
+.imageContainer {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.imageContainer img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.7) 100%);
+  display: flex;
+  align-items: flex-end;
+  padding: 30px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.outfitCard:hover .overlay {
+  opacity: 1;
+}
+
+.outfitCard:hover .imageContainer img {
+  transform: scale(1.05);
+}
+
+.outfitInfo {
+  color: white;
+  text-align: center;
+  width: 100%;
+}
+
+.outfitInfo h3 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.outfitInfo p {
+  font-size: 16px;
+  margin-bottom: 20px;
+  opacity: 0.9;
+}
+
+.outfitInfo .btn {
+  background: white;
+  color: #000;
+  border: none;
+  padding: 12px 24px;
+  font-weight: 600;
+}
+
+.outfitInfo .btn:hover {
+  background: #f0f0f0;
+}
+
+@media (max-width: 768px) {
+  .outfits {
+    padding: 60px 0;
+  }
+
+  .title {
+    font-size: 28px;
+  }
+
+  .subtitle {
+    font-size: 16px;
+    margin-bottom: 40px;
+  }
+
+  .outfitsGrid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .overlay {
+    opacity: 1;
+    padding: 20px;
+  }
+}
