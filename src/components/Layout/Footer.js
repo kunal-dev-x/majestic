@@ -50,6 +50,7 @@ const Footer = () => {
 
         <div className={styles.footerBottom}>
           <p>&copy; 2024 Majestic. All rights reserved.</p>
+          <p className={styles.attribution}>Made by Kunal and Divyanshu not by Sujal. For more updates contact us on GitHub.</p>
         </div>
       </div>
     </footer>
